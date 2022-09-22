@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "sdwebimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImage.git",
+      "state" : {
+        "revision" : "484bc774e1091f622c4856e576ff957b29403676",
+        "version" : "5.13.3"
+      }
+    },
+    {
+      "identity" : "sdwebimageswiftui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImageSwiftUI",
+      "state" : {
+        "revision" : "2221b4fde496a2df854069c432c6d53ec0bc9d59",
+        "version" : "2.2.0"
+      }
+    }
+  ],
+  "version" : 2
+}

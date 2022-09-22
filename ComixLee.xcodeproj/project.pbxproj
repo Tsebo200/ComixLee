@@ -11,6 +11,7 @@
 		BB79A50328DB83BA00A08ECE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB79A50228DB83BA00A08ECE /* ContentView.swift */; };
 		BB79A50528DB83BF00A08ECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB79A50428DB83BF00A08ECE /* Assets.xcassets */; };
 		BB79A50828DB83BF00A08ECE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB79A50728DB83BF00A08ECE /* Preview Assets.xcassets */; };
+		BBBE2BEA28DD13EA00DD7CB4 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BBBE2BE928DD13EA00DD7CB4 /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBBE2BEA28DD13EA00DD7CB4 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = ComixLee;
+			packageProductDependencies = (
+				BBBE2BE928DD13EA00DD7CB4 /* SDWebImageSwiftUI */,
+			);
 			productName = ComixLee;
 			productReference = BB79A4FD28DB83B900A08ECE /* ComixLee.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = BB79A4F428DB83B900A08ECE;
+			packageReferences = (
+				BBBE2BE828DD13E900DD7CB4 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = BB79A4FE28DB83B900A08ECE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BBBE2BE828DD13E900DD7CB4 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BBBE2BE928DD13EA00DD7CB4 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBBE2BE828DD13E900DD7CB4 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BB79A4F528DB83B900A08ECE /* Project object */;
 }
