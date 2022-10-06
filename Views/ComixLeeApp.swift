@@ -12,6 +12,7 @@ struct ComixLeeApp: App {
     var body: some Scene {
         WindowGroup {
 //            ContentView()
+//            Just another comment
             SplashScreenView() //It is in the splash group
             
         }
