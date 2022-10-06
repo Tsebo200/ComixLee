@@ -9,7 +9,19 @@ import SwiftUI
 
 struct Home: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView{
+            Text("Characters")
+                .tabItem {
+                    Image(systemName: "person.3.fill")
+                    Text("Characters")
+                }
+            
+            Text("comics")
+                .tabItem {
+                    Image(systemName: "books.vertical.fill")
+                    Text("comics")
+                }
+        }
     }
 }
 

@@ -15,6 +15,7 @@
 		BBFD9ECA28EE83D800B6D830 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BBFD9EC928EE83D800B6D830 /* SDWebImageSwiftUI */; };
 		BBFD9ECF28EEAAFD00B6D830 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD9ECE28EEAAFD00B6D830 /* Credentials.swift */; };
 		BBFD9ED328EEAC3400B6D830 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD9ED228EEAC3400B6D830 /* Home.swift */; };
+		BBFD9ED528EEAE8E00B6D830 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD9ED428EEAE8E00B6D830 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BBEDFE4828EE6D0E0001B2B0 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		BBFD9ECE28EEAAFD00B6D830 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		BBFD9ED228EEAC3400B6D830 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		BBFD9ED428EEAE8E00B6D830 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		BBFD9ED028EEABD900B6D830 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				BBFD9ED428EEAE8E00B6D830 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB79A50328DB83BA00A08ECE /* ContentView.swift in Sources */,
+				BBFD9ED528EEAE8E00B6D830 /* HomeViewModel.swift in Sources */,
 				BB79A50128DB83BA00A08ECE /* ComixLeeApp.swift in Sources */,
 				BBFD9ED328EEAC3400B6D830 /* Home.swift in Sources */,
 				BBFD9ECF28EEAAFD00B6D830 /* Credentials.swift in Sources */,
