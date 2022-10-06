@@ -9,13 +9,31 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack{
+//            Color.blue
+//                .ignoresSafeArea()
+            Color("Background Color")
+                .edgesIgnoringSafeArea(.all)
+               
+
+            Text("Marvel Comics")
+                .foregroundColor(.white)
+                .font(Font.custom("SF Pro Round", size: 20))
+//                .font(.system(size:30, weight: .medium, design: .default))
+            
+//            Text("Marvel Comics")
+//                .foregroundColor(.white)
+//                .font(.system(size: 32, weight: .medium, design: .avenir))
+
+            
         }
-        .padding()
+//        VStack {
+//            Image(systemName: "globe")
+//                .imageScale(.large)
+//                .foregroundColor(.accentColor)
+//            Text("Hello, world!")
+//        }
+//        .padding()
     }
 }
 
@@ -24,3 +42,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+

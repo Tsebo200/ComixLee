@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB0402B828EE53FA006D1983 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BB0402B728EE53FA006D1983 /* SDWebImageSwiftUI */; };
 		BB79A50128DB83BA00A08ECE /* ComixLeeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB79A50028DB83BA00A08ECE /* ComixLeeApp.swift */; };
 		BB79A50328DB83BA00A08ECE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB79A50228DB83BA00A08ECE /* ContentView.swift */; };
 		BB79A50528DB83BF00A08ECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB79A50428DB83BF00A08ECE /* Assets.xcassets */; };
 		BB79A50828DB83BF00A08ECE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB79A50728DB83BF00A08ECE /* Preview Assets.xcassets */; };
-		BBBE2BEA28DD13EA00DD7CB4 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BBBE2BE928DD13EA00DD7CB4 /* SDWebImageSwiftUI */; };
+		BBEDFE4928EE6D0E0001B2B0 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEDFE4828EE6D0E0001B2B0 /* SplashScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		BB79A50228DB83BA00A08ECE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BB79A50428DB83BF00A08ECE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB79A50728DB83BF00A08ECE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BBEDFE4828EE6D0E0001B2B0 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,18 +29,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBBE2BEA28DD13EA00DD7CB4 /* SDWebImageSwiftUI in Frameworks */,
+				BB0402B828EE53FA006D1983 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB0402B628EE53FA006D1983 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BB79A4F428DB83B900A08ECE = {
 			isa = PBXGroup;
 			children = (
 				BB79A4FF28DB83BA00A08ECE /* Views */,
 				BB79A4FE28DB83B900A08ECE /* Products */,
+				BB0402B628EE53FA006D1983 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +63,7 @@
 		BB79A4FF28DB83BA00A08ECE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BBEDFE4A28EE6D910001B2B0 /* Splash */,
 				BB79A50028DB83BA00A08ECE /* ComixLeeApp.swift */,
 				BB79A50228DB83BA00A08ECE /* ContentView.swift */,
 				BB79A50428DB83BF00A08ECE /* Assets.xcassets */,
@@ -67,6 +78,14 @@
 				BB79A50728DB83BF00A08ECE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BBEDFE4A28EE6D910001B2B0 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				BBEDFE4828EE6D0E0001B2B0 /* SplashScreenView.swift */,
+			);
+			path = Splash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,7 +105,7 @@
 			);
 			name = ComixLee;
 			packageProductDependencies = (
-				BBBE2BE928DD13EA00DD7CB4 /* SDWebImageSwiftUI */,
+				BB0402B728EE53FA006D1983 /* SDWebImageSwiftUI */,
 			);
 			productName = ComixLee;
 			productReference = BB79A4FD28DB83B900A08ECE /* ComixLee.app */;
@@ -147,6 +166,7 @@
 			files = (
 				BB79A50328DB83BA00A08ECE /* ContentView.swift in Sources */,
 				BB79A50128DB83BA00A08ECE /* ComixLeeApp.swift in Sources */,
+				BBEDFE4928EE6D0E0001B2B0 /* SplashScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +294,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ComixLee/Preview Content\"";
 				DEVELOPMENT_TEAM = N925VK36R7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -303,7 +322,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ComixLee/Preview Content\"";
 				DEVELOPMENT_TEAM = N925VK36R7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -360,7 +378,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		BBBE2BE928DD13EA00DD7CB4 /* SDWebImageSwiftUI */ = {
+		BB0402B728EE53FA006D1983 /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = BBBE2BE828DD13E900DD7CB4 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
