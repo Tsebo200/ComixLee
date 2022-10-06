@@ -8,13 +8,22 @@
 import SwiftUI
 
 struct CharactersView: View {
+    @EnvironmentObject var homeData: HomeViewModel
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView(.vertical, showsIndicators: false, content:{
+            VStack(spacing: 15){
+                
+                // This is the Search Bar..
+                HStack(spacing: 10){
+                    Image(systemName: "magnifyingglass")
+                }
+            }
+        })
     }
 }
 
 struct CharactersView_Previews: PreviewProvider {
     static var previews: some View {
-        CharactersView()
+        ContentView()
     }
 }
