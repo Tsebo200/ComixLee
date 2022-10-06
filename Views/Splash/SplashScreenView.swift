@@ -27,7 +27,7 @@ struct SplashScreenView: View{
                         .resizable()
 //                        .renderingMode(.original)
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 170, height:170)
+                        .frame(width: 120, height:120)
 //                        .resizable()
 //                        .font(.system(size: 300))
 //                        .foregroundColor(.red)
