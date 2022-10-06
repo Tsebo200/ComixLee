@@ -13,6 +13,8 @@
 		BB79A50828DB83BF00A08ECE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB79A50728DB83BF00A08ECE /* Preview Assets.xcassets */; };
 		BBEDFE4928EE6D0E0001B2B0 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEDFE4828EE6D0E0001B2B0 /* SplashScreenView.swift */; };
 		BBFD9ECA28EE83D800B6D830 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BBFD9EC928EE83D800B6D830 /* SDWebImageSwiftUI */; };
+		BBFD9ECF28EEAAFD00B6D830 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD9ECE28EEAAFD00B6D830 /* Credentials.swift */; };
+		BBFD9ED328EEAC3400B6D830 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD9ED228EEAC3400B6D830 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		BB79A50428DB83BF00A08ECE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB79A50728DB83BF00A08ECE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BBEDFE4828EE6D0E0001B2B0 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		BBFD9ECE28EEAAFD00B6D830 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		BBFD9ED228EEAC3400B6D830 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,9 @@
 		BB79A4F428DB83B900A08ECE = {
 			isa = PBXGroup;
 			children = (
+				BBFD9ED128EEABE500B6D830 /* Model */,
+				BBFD9ED028EEABD900B6D830 /* ViewModel */,
+				BBFD9ECB28EEAA9F00B6D830 /* API Credentials  */,
 				BB79A4FF28DB83BA00A08ECE /* Views */,
 				BB79A4FE28DB83B900A08ECE /* Products */,
 				BB0402B628EE53FA006D1983 /* Frameworks */,
@@ -63,6 +70,7 @@
 		BB79A4FF28DB83BA00A08ECE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BBFD9ED228EEAC3400B6D830 /* Home.swift */,
 				BBEDFE4A28EE6D910001B2B0 /* Splash */,
 				BB79A50028DB83BA00A08ECE /* ComixLeeApp.swift */,
 				BB79A50228DB83BA00A08ECE /* ContentView.swift */,
@@ -86,6 +94,28 @@
 				BBEDFE4828EE6D0E0001B2B0 /* SplashScreenView.swift */,
 			);
 			path = Splash;
+			sourceTree = "<group>";
+		};
+		BBFD9ECB28EEAA9F00B6D830 /* API Credentials  */ = {
+			isa = PBXGroup;
+			children = (
+				BBFD9ECE28EEAAFD00B6D830 /* Credentials.swift */,
+			);
+			path = "API Credentials ";
+			sourceTree = "<group>";
+		};
+		BBFD9ED028EEABD900B6D830 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BBFD9ED128EEABE500B6D830 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +196,8 @@
 			files = (
 				BB79A50328DB83BA00A08ECE /* ContentView.swift in Sources */,
 				BB79A50128DB83BA00A08ECE /* ComixLeeApp.swift in Sources */,
+				BBFD9ED328EEAC3400B6D830 /* Home.swift in Sources */,
+				BBFD9ECF28EEAAFD00B6D830 /* Credentials.swift in Sources */,
 				BBEDFE4928EE6D0E0001B2B0 /* SplashScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
