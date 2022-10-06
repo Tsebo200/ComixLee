@@ -23,11 +23,16 @@ struct SplashScreenView: View{
                 Color("Secondary Color")
                     .edgesIgnoringSafeArea(.all)
                 VStack{
-                    Image(systemName: "ant.fill")
-                        .font(.system(size: 80))
-                        .foregroundColor(.red)
+                    Image("image1")
+                        .resizable()
+//                        .renderingMode(.original)
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 170, height:170)
+//                        .resizable()
+//                        .font(.system(size: 300))
+//                        .foregroundColor(.red)
                     Text("ComixLee")
-                        .font(Font.custom("Avenir", size: 20))
+                        .font(Font.custom("SF Pro Rounded", size: 26))
                         .foregroundColor(.white.opacity(0.80))
                 }
                 .scaleEffect(size)
@@ -38,14 +43,14 @@ struct SplashScreenView: View{
                         self.opacity = 0
                     }
                     withAnimation(.easeIn(duration: 2.4)) {
-                        self.size = 1.2
+                        self.size = 1.0
                         self.opacity = 1.0
                     }
                  
                 }
             }
             .onAppear {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3.4) {
                     withAnimation {
                         self.isActive = true
                     }
