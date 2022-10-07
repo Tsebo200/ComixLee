@@ -14,12 +14,25 @@ class HomeViewModel: ObservableObject {
     //Combine Framework Search barr...
     
     // used to cancel the search publisher when eveer we need....
-    let searchCancellabel: AnyCancellable? = nil
+    var searchCancellable: AnyCancellable? = nil
     
     init(){
-        // since SwiftUI uses @publish so its a publisher....
-        // so we dont need to explicityly define publisher...
-//        searchCancellabel = $searchquery 5:08
+//         since SwiftUI uses @publish so its a publisher....
+//         so we dont need to explicityly define publisher... (left of @05:08)
+        searchCancellable = $searchQuery
+        //removing deuplicate typings..
+            .removeDuplicates()
+        
+            .debounce(for: 0.6, scheduler: RunLoop.main)
+            .sink(receiveValue: {str in
+                
+                if str == ""{
+                    //
+                } else{
+                    print(str)
+                }
+                    
+                })
     }
     
 }

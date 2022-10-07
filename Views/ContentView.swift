@@ -19,6 +19,7 @@ struct ContentView: View {
 
             Text("Marvel Comics")
                 .foregroundColor(.white)
+//                .foregroundColor(Color("Bright Yellow"))
                 .font(Font.custom("SF Pro Round", size: 20))
 
     }

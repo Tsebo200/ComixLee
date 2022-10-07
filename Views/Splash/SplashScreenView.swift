@@ -33,7 +33,8 @@ struct SplashScreenView: View{
 //                        .foregroundColor(.red)
                     Text("ComixLee")
                         .font(Font.custom("SF Pro Rounded", size: 26))
-                        .foregroundColor(.white.opacity(0.80))
+//                        .foregroundColor(.white.opacity(0.80))
+                        .foregroundColor(Color("Dark Red"))
                 }
                 .scaleEffect(size)
                 .opacity(opacity)
