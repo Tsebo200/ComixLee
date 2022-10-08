@@ -31,6 +31,8 @@ class HomeViewModel: ObservableObject {
                 
                 if str == ""{
                     //rest data
+                    self.fetchedCharacters = nil
+                    
                 } else{
                     //search Data
                     self.searchCharcter()
@@ -61,6 +63,14 @@ class HomeViewModel: ObservableObject {
             do{
                 
                 //Now This is were we decode The API Data....
+                let characters = try JSONDecoder().decode(APIResult.self, from: APIData)
+                
+                DispatchQueue.main.async {
+                    
+                    if self.fetchedCharcters == nil{
+                        self.fetchedCharacters = characters.data.results
+                    }
+                }
             }
             catch{
                 print(error.localizedDescription)

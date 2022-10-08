@@ -31,6 +31,23 @@ struct CharactersView: View {
                     .shadow(color: Color.black.opacity(0.06), radius: 5, x: 5, y: -5)
                 }
                 .padding()
+                
+                if let characters = homeData.fetchedCharacters{
+                    
+                    if characters.isEmpty{
+                        // No Results...
+                        Text("No Results Found")
+                            .padding(.top,20)
+                    }
+                    else{
+                        // Displaying results.....
+                    }
+                }
+                else{
+                    // Loading Screen...
+                    ProgressView()
+                        .padding(.top,20)
+                }
             })
             .navigationTitle("Marvel")
         }
