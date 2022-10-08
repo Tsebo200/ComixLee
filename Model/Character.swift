@@ -14,7 +14,7 @@ struct APIResult: Codable {
 
 struct APICharacterData: Codable {
     var count: Int
-    var result: [Character]
+    var results: [Character]
 }
 
 struct Character: Identifiable,Codable {

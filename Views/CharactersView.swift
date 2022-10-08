@@ -41,6 +41,10 @@ struct CharactersView: View {
                     }
                     else{
                         // Displaying results.....
+                        ForEach(characters){data in
+                            
+                            Text(data.name)
+                        }
                     }
                 }
                 else{

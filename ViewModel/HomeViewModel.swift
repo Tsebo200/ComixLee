@@ -20,8 +20,8 @@ class HomeViewModel: ObservableObject {
     //fetch Data
     @Published var fetchCharcters: [Character]? = nil
     init(){
-//         since SwiftUI uses @publish so its a publisher....
-//         so we dont need to explicityly define publisher... (left of @05:08)
+        //         since SwiftUI uses @publish so its a publisher....
+        //         so we dont need to explicityly define publisher... (left of @05:08)
         searchCancellable = $searchQuery
         //removing deuplicate typings..
             .removeDuplicates()
@@ -33,13 +33,14 @@ class HomeViewModel: ObservableObject {
                     //rest data
                     self.fetchedCharacters = nil
                     
-                } else{
+                }
+                else{
                     //search Data
                     self.searchCharcter()
                     
                 }
-                    
-                })
+                
+            })
         
     }
     func searchCharcter(){
@@ -67,7 +68,7 @@ class HomeViewModel: ObservableObject {
                 
                 DispatchQueue.main.async {
                     
-                    if self.fetchedCharcters == nil{
+                    if self.fetchedCharacters == nil{
                         self.fetchedCharacters = characters.data.results
                     }
                 }
@@ -76,13 +77,14 @@ class HomeViewModel: ObservableObject {
                 print(error.localizedDescription)
             }
         }
-    //Use cryptoKit to generate Hash...
-    func MD5(data: String)->String{
-        let hash = Insecure.MD5.hash(data: data.data(using: .utf8) ?? Data())
-        
-        return hash.map{
-            String(format: "%02hnx", $0)
+        //Use cryptoKit to generate Hash...
+        func MD5(data: String)->String{
+            let hash = Insecure.MD5.hash(data: data.data(using: .utf8) ?? Data())
+            
+            return hash.map{
+                String(format: "%02hnx", $0)
+            }
+            .joined()
         }
-        .joined()
     }
 }
