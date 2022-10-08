@@ -12,6 +12,7 @@ struct CharactersView: View {
     var body: some View {
         // Navigation View
         NavigationView{
+            
             ScrollView(.vertical, showsIndicators: false, content:{
                 VStack(spacing: 15){
                     

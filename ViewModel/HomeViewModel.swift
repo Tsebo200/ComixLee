@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Combine
+import CryptoKit
 
 class HomeViewModel: ObservableObject {
     @Published var searchQuery = ""
@@ -16,6 +17,8 @@ class HomeViewModel: ObservableObject {
     // used to cancel the search publisher when eveer we need....
     var searchCancellable: AnyCancellable? = nil
     
+    //fetch Data
+    @Published var fetchCharcters: [Character]? = nil
     init(){
 //         since SwiftUI uses @publish so its a publisher....
 //         so we dont need to explicityly define publisher... (left of @05:08)
@@ -27,12 +30,49 @@ class HomeViewModel: ObservableObject {
             .sink(receiveValue: {str in
                 
                 if str == ""{
-                    //
+                    //rest data
                 } else{
-                    print(str)
+                    //search Data
+                    self.searchCharcter()
+                    
                 }
                     
                 })
+        
     }
-    
+    func searchCharcter(){
+        let ts = String(Date().timeIntervalSince1970)
+        let hash = MD5(data: "\(ts)\(privateKey)\(publicKey)")
+        let url = "https://gateway.marvel.com:443/v1/public/characters?ts=\(ts)&apikey=\(publicKey)&hash=\(hash)"
+        
+        let session = URLSession(configuration: .default)
+        
+        session.dataTask(with: URL(string: url)!) {(data, _, err) in
+            
+            if let error = err{
+                print(error.localizedDescription)
+                return
+            }
+            
+            guard let APIData = data else{
+                print("no data found")
+                return
+            }
+            do{
+                
+                //Now This is were we decode The API Data....
+            }
+            catch{
+                print(error.localizedDescription)
+            }
+        }
+    //Use cryptoKit to generate Hash...
+    func MD5(data: String)->String{
+        let hash = Insecure.MD5.hash(data: data.data(using: .utf8) ?? Data())
+        
+        return hash.map{
+            String(format: "%02hnx", $0)
+        }
+        .joined()
+    }
 }
