@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-//This is the model for Characters
+//This is the model schema for Characters
 
 struct APIResult: Codable {
     var data: APICharacterData
@@ -22,7 +22,7 @@ struct Character: Identifiable,Codable {
     var name: String
     var description: String
     var thumbnail: [String:String]
-    var  urls: [[String:String]]
+    var  urls: [[String: String]]
 
 }
 

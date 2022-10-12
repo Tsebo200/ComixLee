@@ -18,6 +18,7 @@
 		BBFD9ED328EEAC3400B6D830 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD9ED228EEAC3400B6D830 /* Home.swift */; };
 		BBFD9ED528EEAE8E00B6D830 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD9ED428EEAE8E00B6D830 /* HomeViewModel.swift */; };
 		BBFD9ED728EEB0D300B6D830 /* CharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD9ED628EEB0D300B6D830 /* CharactersView.swift */; };
+		BBFF862628F6542300584E28 /* SettingsModeSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFF862528F6542300584E28 /* SettingsModeSwitchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		BBFD9ED228EEAC3400B6D830 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		BBFD9ED428EEAE8E00B6D830 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		BBFD9ED628EEB0D300B6D830 /* CharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersView.swift; sourceTree = "<group>"; };
+		BBFF862528F6542300584E28 /* SettingsModeSwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModeSwitchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		BB79A4FF28DB83BA00A08ECE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BBFF862528F6542300584E28 /* SettingsModeSwitchView.swift */,
 				BBFD9ED628EEB0D300B6D830 /* CharactersView.swift */,
 				BBFD9ED228EEAC3400B6D830 /* Home.swift */,
 				BBEDFE4A28EE6D910001B2B0 /* Splash */,
@@ -209,6 +212,7 @@
 				BBFD9ED328EEAC3400B6D830 /* Home.swift in Sources */,
 				BBFD9ECF28EEAAFD00B6D830 /* Credentials.swift in Sources */,
 				BBFD9ED728EEB0D300B6D830 /* CharactersView.swift in Sources */,
+				BBFF862628F6542300584E28 /* SettingsModeSwitchView.swift in Sources */,
 				BBEDFE4928EE6D0E0001B2B0 /* SplashScreenView.swift in Sources */,
 				BBE1557728F10F8B008A83C7 /* Character.swift in Sources */,
 			);

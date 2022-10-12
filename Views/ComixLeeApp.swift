@@ -11,10 +11,12 @@ import SwiftUI
 struct ComixLeeApp: App {
     var body: some Scene {
         WindowGroup {
-//            ContentView()
-//            SplashScreenView() //It is in the splash group
-            Home()
-            
+            //            ContentView()
+            //            SplashScreenView() //It is in the splash group
+            //            Home()
+            NavigationView {
+                SettingsModeSwitchView()
+            }
         }
     }
 }

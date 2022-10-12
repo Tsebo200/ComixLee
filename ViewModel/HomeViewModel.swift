@@ -29,16 +29,16 @@ class HomeViewModel: ObservableObject {
             .debounce(for: 0.6, scheduler: RunLoop.main)
             .sink(receiveValue: {str in
                 
-                if str == ""{
-                    //rest data
-                    self.fetchedCharacters = nil
-                    
-                }
-                else{
-                    //search Data
-                    self.searchCharcter()
-                    
-                }
+//                if str == ""{
+//                    //rest data
+////                    self.fetchedCharacters = nil
+//
+//                }
+//                else{
+//                    //search Data
+//                    self.searchCharcter()
+//
+//                }
                 
             })
         
@@ -68,9 +68,9 @@ class HomeViewModel: ObservableObject {
                 
                 DispatchQueue.main.async {
                     
-                    if self.fetchedCharacters == nil{
-                        self.fetchedCharacters = characters.data.results
-                    }
+//                    if self.fetchedCharacters == nil{
+//                        self.fetchedCharacters = characters.data.results
+//                    }
                 }
             }
             catch{
@@ -86,5 +86,11 @@ class HomeViewModel: ObservableObject {
             }
             .joined()
         }
+    }
+}
+
+struct Previews_HomeViewModel_Previews: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
     }
 }
