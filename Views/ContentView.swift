@@ -14,6 +14,7 @@ struct ContentView: View {
 //            Color.blue
 //                .ignoresSafeArea()
             Color("Background Color")
+            
                 .edgesIgnoringSafeArea(.all)
                
 

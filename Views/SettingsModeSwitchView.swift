@@ -8,16 +8,19 @@
 import SwiftUI
 
 struct SettingsModeSwitchView: View {
-    @AppStorage("isDarMode") private var isDarkMode = false
+    @AppStorage("isDarkMode") private var isDarkMode = false
     
     @State private var vibrateOnRing = false
     var body: some View {
         VStack {
+            //                        Normal on and off Switch
             
-            //            Normal on and off Switch
-            //            Toggle(isOn: $isDarkMode) {
-            //                    Text("Dark")
-            //                }
+            Toggle(isOn: $isDarkMode) {
+                Text("Mode")
+                    .padding([.bottom, .trailing], -30)
+                    .padding([.leading, .trailing], 30)
+            
+            }
             Picker("mode", selection: $isDarkMode){
                 Text("Light")
                     .tag(false)
@@ -25,7 +28,7 @@ struct SettingsModeSwitchView: View {
                     .tag(true)
             }.pickerStyle(SegmentedPickerStyle())
                 .padding()
-            //                Spacer()
+            //                            Spacer()
             List(0..<5, id: \.self){ num in
                 NavigationLink(destination: Text("\(num)")){
                     Text("\(num)")

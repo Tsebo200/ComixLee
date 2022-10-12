@@ -9,14 +9,27 @@ import SwiftUI
 
 @main
 struct ComixLeeApp: App {
+    @AppStorage("isDarkMode") private var isDarkMode = false
     var body: some Scene {
         WindowGroup {
             //            ContentView()
             //            SplashScreenView() //It is in the splash group
             //            Home()
-            NavigationView {
-                SettingsModeSwitchView()
+            TabView {
+                NavigationView {
+                    SettingsModeSwitchView()
+                }.tabItem {
+                    Image(systemName: "list.bullet")
+                    Text("List")
+                }
+                Text("Profile")
+                    .tabItem{
+                        Image(systemName: "person")
+                        Text("Profile")
+                    }
             }
+            .preferredColorScheme(isDarkMode ? .dark : .light)
+            .accentColor(.primary)
         }
     }
 }
