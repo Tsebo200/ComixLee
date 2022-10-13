@@ -9,7 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        LoopingPlayer()
         Home()
+    
         ZStack{
 //            Color.blue
 //                .ignoresSafeArea()
