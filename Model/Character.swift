@@ -25,6 +25,7 @@ struct Character: Identifiable,Codable {
     var  urls: [[String: String]]
 
 }
+//just to check
 
 //Consider To add the Rest
 //    comics (ComicList, optional): A resource list containing comics which feature this character.,
