@@ -12,25 +12,34 @@ struct ComixLeeApp: App {
     @AppStorage("isDarkMode") private var isDarkMode = false
     var body: some Scene {
         WindowGroup {
-                        ContentView()
+                      
+            
             //            SplashScreenView() //It is in the splash group
             //            Home()
             
-//            TabView {
-//                NavigationView {
-//                    SettingsModeSwitchView()
-//                }.tabItem {
-//                    Image(systemName: "list.bullet")
-//                    Text("List")
-//                }
-//                Text("Profile")
-//                    .tabItem{
-//                        Image(systemName: "person")
-//                        Text("Profile")
-//                    }
-//            }
-//            .preferredColorScheme(isDarkMode ? .dark : .light)
-//            .accentColor(.primary)
+            //Feedback
+            //Remove all TabViews
+            // Add the Home view here
+            
+            TabView {
+                NavigationView {
+                    SettingsModeSwitchView()
+                }.tabItem {
+                    Image(systemName: "list.bullet")
+                    Text("List")
+                }
+                Text("Profile")
+                    .tabItem{
+                        Image(systemName: "person")
+                        Text("Profile") //Check this out
+                    }
+                ContentView().tabItem{
+                    Image(systemName: "person")
+                    Text("Home")
+                }
+            }
+            .preferredColorScheme(isDarkMode ? .dark : .light)
+            .accentColor(.primary)
             
         }
     }

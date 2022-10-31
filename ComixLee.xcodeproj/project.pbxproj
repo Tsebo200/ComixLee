@@ -15,7 +15,6 @@
 		BBC915CF28F7F0EE00510CCA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC915CE28F7F0EE00510CCA /* SettingsView.swift */; };
 		BBE1557728F10F8B008A83C7 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE1557628F10F8B008A83C7 /* Character.swift */; };
 		BBEDFE4928EE6D0E0001B2B0 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEDFE4828EE6D0E0001B2B0 /* SplashScreenView.swift */; };
-		BBFD9ECA28EE83D800B6D830 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BBFD9EC928EE83D800B6D830 /* SDWebImageSwiftUI */; };
 		BBFD9ECF28EEAAFD00B6D830 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD9ECE28EEAAFD00B6D830 /* Credentials.swift */; };
 		BBFD9ED328EEAC3400B6D830 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD9ED228EEAC3400B6D830 /* Home.swift */; };
 		BBFD9ED528EEAE8E00B6D830 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD9ED428EEAE8E00B6D830 /* HomeViewModel.swift */; };
@@ -33,6 +32,7 @@
 		BB79A50728DB83BF00A08ECE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BBC915CE28F7F0EE00510CCA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		BBE1557628F10F8B008A83C7 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		BBEDB37E290FE26700296CD0 /* SDWebImageSwiftUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SDWebImageSwiftUI; path = ../SDWebImageSwiftUI; sourceTree = "<group>"; };
 		BBEDFE4828EE6D0E0001B2B0 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		BBFD9ECE28EEAAFD00B6D830 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		BBFD9ED228EEAC3400B6D830 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -47,7 +47,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBFD9ECA28EE83D800B6D830 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +71,7 @@
 		BB79A4F428DB83B900A08ECE = {
 			isa = PBXGroup;
 			children = (
+				BBEDB37D290FE26700296CD0 /* Packages */,
 				BB5FC50328F8794600A79136 /* Assets */,
 				BBFD9ED128EEABE500B6D830 /* Model */,
 				BBFD9ED028EEABD900B6D830 /* ViewModel */,
@@ -111,6 +111,14 @@
 				BB79A50728DB83BF00A08ECE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BBEDB37D290FE26700296CD0 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				BBEDB37E290FE26700296CD0 /* SDWebImageSwiftUI */,
+			);
+			name = Packages;
 			sourceTree = "<group>";
 		};
 		BBEDFE4A28EE6D910001B2B0 /* Splash */ = {
@@ -164,7 +172,6 @@
 			);
 			name = ComixLee;
 			packageProductDependencies = (
-				BBFD9EC928EE83D800B6D830 /* SDWebImageSwiftUI */,
 			);
 			productName = ComixLee;
 			productReference = BB79A4FD28DB83B900A08ECE /* ComixLee.app */;
@@ -444,14 +451,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		BBFD9EC928EE83D800B6D830 /* SDWebImageSwiftUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BBBE2BE828DD13E900DD7CB4 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
-			productName = SDWebImageSwiftUI;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BB79A4F528DB83B900A08ECE /* Project object */;
 }

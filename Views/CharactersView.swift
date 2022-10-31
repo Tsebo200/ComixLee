@@ -12,7 +12,7 @@ struct CharactersView: View {
     var body: some View {
         // Navigation View
         NavigationView{
-            
+//            HStck wrap in a destination in detail screen
             ScrollView(.vertical, showsIndicators: false, content:{
                 VStack(spacing: 15){
                     
