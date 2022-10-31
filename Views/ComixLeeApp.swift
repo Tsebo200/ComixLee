@@ -14,8 +14,8 @@ struct ComixLeeApp: App {
         WindowGroup {
             
             
-            //            SplashScreenView() //It is in the splash group
-            //            Home()
+//            SplashScreenView() //It is in the splash group
+//            Home()
             
             //Feedback
             //Remove all TabViews
@@ -23,27 +23,22 @@ struct ComixLeeApp: App {
             
             TabView {
                 NavigationView {
-                    Home().tabItem{
+                    Home()}.tabItem{
+                        Image(systemName: "house")
+                        Text("Home")
+                    }
+
+                NavigationView {
+                    ContentView()}.tabItem{
                         Image(systemName: "person")
                         Text("Home")
                     }
-                    
-                    
-                    
-                    //                Text("Profile")
-                    //                    .tabItem{
-                    //                        Image(systemName: "person")
-                    //                        Text("Profile") //Check this out
-                    //                    }
-                    ContentView().tabItem{
-                        Image(systemName: "person")
-                        Text("Home")
-                    }
-                    SettingsModeSwitchView().tabItem {
+                NavigationView {
+                    SettingsModeSwitchView()}.tabItem {
                         Image(systemName: "list.bullet")
                         Text("List")
                     }
-                }
+                 
             }
                 .preferredColorScheme(isDarkMode ? .dark : .light)
                 .accentColor(.primary)
@@ -52,3 +47,8 @@ struct ComixLeeApp: App {
         }
     }
 
+//                Text("Profile")
+//                    .tabItem{
+//                        Image(systemName: "person")
+//                        Text("Profile") //Check this out
+//                    }
