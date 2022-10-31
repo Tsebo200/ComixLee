@@ -12,7 +12,7 @@ struct ComixLeeApp: App {
     @AppStorage("isDarkMode") private var isDarkMode = false
     var body: some Scene {
         WindowGroup {
-                      
+            
             
             //            SplashScreenView() //It is in the splash group
             //            Home()
@@ -23,24 +23,32 @@ struct ComixLeeApp: App {
             
             TabView {
                 NavigationView {
-                    SettingsModeSwitchView()
-                }.tabItem {
-                    Image(systemName: "list.bullet")
-                    Text("List")
-                }
-                Text("Profile")
-                    .tabItem{
+                    Home().tabItem{
                         Image(systemName: "person")
-                        Text("Profile") //Check this out
+                        Text("Home")
                     }
-                ContentView().tabItem{
-                    Image(systemName: "person")
-                    Text("Home")
+                    
+                    
+                    
+                    //                Text("Profile")
+                    //                    .tabItem{
+                    //                        Image(systemName: "person")
+                    //                        Text("Profile") //Check this out
+                    //                    }
+                    ContentView().tabItem{
+                        Image(systemName: "person")
+                        Text("Home")
+                    }
+                    SettingsModeSwitchView().tabItem {
+                        Image(systemName: "list.bullet")
+                        Text("List")
+                    }
                 }
             }
-            .preferredColorScheme(isDarkMode ? .dark : .light)
-            .accentColor(.primary)
-            
+                .preferredColorScheme(isDarkMode ? .dark : .light)
+                .accentColor(.primary)
+                
+            }
         }
     }
-}
+
