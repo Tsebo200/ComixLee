@@ -30,13 +30,13 @@ struct ComixLeeApp: App {
 
                 NavigationView {
                     ContentView()}.tabItem{
-                        Image(systemName: "person")
-                        Text("Home")
+                        Image(systemName: "book")
+                        Text("Reading")
                     }
                 NavigationView {
                     SettingsModeSwitchView()}.tabItem {
-                        Image(systemName: "list.bullet")
-                        Text("List")
+                        Image(systemName: "gearshape")
+                        Text("Settings")
                     }
                  
             }
