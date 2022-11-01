@@ -29,17 +29,19 @@ class HomeViewModel: ObservableObject {
             .debounce(for: 0.6, scheduler: RunLoop.main)
             .sink(receiveValue: {str in
                 
-                if str == ""{
-                    //rest data
-                    self.fetchedCharacters = nil
-
-                }
-                else{
-                    //search Data
-                    print(str)
+//                Find a way to call all the character
+//                if str == ""{
+//                    //rest data
+//
+//
+//                }
+//                else{
+//                    //search Data
+//                    print(str)
                     self.searchCharacter()
-
-                }
+                
+//
+//                }
                 
             })
         
@@ -75,6 +77,7 @@ class HomeViewModel: ObservableObject {
                     
                     if self.fetchedCharacters == nil{
                         self.fetchedCharacters = characters.data.results
+                        print(self.fetchedCharacters ?? "hello world")
                     }
                 }
             }

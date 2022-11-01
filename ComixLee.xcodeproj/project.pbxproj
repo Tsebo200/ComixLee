@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB22796E2911346600A4EA43 /* Marvel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB22796D2911346600A4EA43 /* Marvel.swift */; };
+		BB2279742911369100A4EA43 /* MarvelChars.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2279732911369100A4EA43 /* MarvelChars.swift */; };
 		BB5FC50528F879AD00A79136 /* LoopingPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5FC50428F879AD00A79136 /* LoopingPlayer.swift */; };
 		BB79A50128DB83BA00A08ECE /* ComixLeeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB79A50028DB83BA00A08ECE /* ComixLeeApp.swift */; };
 		BB79A50328DB83BA00A08ECE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB79A50228DB83BA00A08ECE /* ContentView.swift */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB22796D2911346600A4EA43 /* Marvel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marvel.swift; sourceTree = "<group>"; };
+		BB2279732911369100A4EA43 /* MarvelChars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelChars.swift; sourceTree = "<group>"; };
 		BB5FC50428F879AD00A79136 /* LoopingPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopingPlayer.swift; sourceTree = "<group>"; };
 		BB79A4FD28DB83B900A08ECE /* ComixLee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComixLee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB79A50028DB83BA00A08ECE /* ComixLeeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComixLeeApp.swift; sourceTree = "<group>"; };
@@ -60,6 +64,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BB22796F2911351600A4EA43 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		BB2279702911352C00A4EA43 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BB2279732911369100A4EA43 /* MarvelChars.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		BB5FC50328F8794600A79136 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +90,7 @@
 		BB79A4F428DB83B900A08ECE = {
 			isa = PBXGroup;
 			children = (
+				BB2279702911352C00A4EA43 /* Data */,
 				BBEDB37D290FE26700296CD0 /* Packages */,
 				BB5FC50328F8794600A79136 /* Assets */,
 				BBFD9ED128EEABE500B6D830 /* Model */,
@@ -150,7 +170,9 @@
 		BBFD9ED128EEABE500B6D830 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BB22796F2911351600A4EA43 /* New Group */,
 				BBE1557628F10F8B008A83C7 /* Character.swift */,
+				BB22796D2911346600A4EA43 /* Marvel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -237,6 +259,8 @@
 				BBFD9ED328EEAC3400B6D830 /* Home.swift in Sources */,
 				BBFD9ECF28EEAAFD00B6D830 /* Credentials.swift in Sources */,
 				BBC915CF28F7F0EE00510CCA /* SettingsView.swift in Sources */,
+				BB22796E2911346600A4EA43 /* Marvel.swift in Sources */,
+				BB2279742911369100A4EA43 /* MarvelChars.swift in Sources */,
 				BBFD9ED728EEB0D300B6D830 /* CharactersView.swift in Sources */,
 				BBFF862628F6542300584E28 /* SettingsModeSwitchView.swift in Sources */,
 				BBEDFE4928EE6D0E0001B2B0 /* SplashScreenView.swift in Sources */,
