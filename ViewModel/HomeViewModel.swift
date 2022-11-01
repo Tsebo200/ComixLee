@@ -77,7 +77,10 @@ class HomeViewModel: ObservableObject {
             catch{
                 print(error.localizedDescription)
             }
+            
         }
+        .resume()
+    }
         //Use cryptoKit to generate Hash...
         func MD5(data: String)->String{
             let hash = Insecure.MD5.hash(data: data.data(using: .utf8) ?? Data())
@@ -88,7 +91,7 @@ class HomeViewModel: ObservableObject {
             .joined()
         }
     }
-}
+
 
 struct Previews_HomeViewModel_Previews: PreviewProvider {
     static var previews: some View {

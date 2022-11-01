@@ -32,26 +32,30 @@ struct CharactersView: View {
                 }
                 .padding()
                 
-//                if let characters = homeData.fetchedCharacters{
+                if let characters = homeData.fetchedCharacters{
+
+                    if characters.isEmpty{
+                        // No Results...
+                        Text("No Results Found")
+                            .padding(.top,20)
+                    }
+                    else{
+                        // Displaying results.....
+                        ForEach(characters){data in
+
+                            Text(data.name)
+                        }
+                    }
+                }
+                else{
+                    if homeData.searchQuery != ""{
+//                         Loading Screen...
+                         ProgressView()
+                        .padding(.top,20)
+                        
+                    }
 //
-//                    if characters.isEmpty{
-//                        // No Results...
-//                        Text("No Results Found")
-//                            .padding(.top,20)
-//                    }
-//                    else{
-//                        // Displaying results.....
-//                        ForEach(characters){data in
-//
-//                            Text(data.name)
-//                        }
-//                    }
-//                }
-//                else{
-//                    // Loading Screen...
-//                    ProgressView()
-//                        .padding(.top,20)
-//                }
+                }
             })
             .navigationTitle("Marvel Comix")
         }
