@@ -72,7 +72,7 @@ struct CharactersView: View {
                         // Displaying results.....
                         ForEach(characters){data in
 
-                            Text(data.name)
+                            CharacterRowView(character: data)
                         }
                     }
                 }
@@ -101,13 +101,34 @@ struct CharacterRowView: View {
     var character: Character
     
     var body: some View{
-        HStack{
+        HStack(alignment: .top, spacing: 15){
             
-//            WebImage(url: URL(string: charcater.))
+            WebImage(url: extractImage(data: character.thumbnail))
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 150, height: 150)
+            
+            VStack(alignment: .leading, spacing: 8, content: {
+                
+                Text(character.name)
+                    .font(.title3)
+                    .fontWeight(.bold)
+                
+                Text(character.description)
+                    .font(.caption)
+                    .foregroundColor(.gray)
+                    .lineLimit(4)
+                    .multilineTextAlignment(.leading)
+            })
+            Spacer(minLength: 0)
         }
     }
     
-//    func extractImage()->URL{
-//        
-//    }
+    func extractImage(data: [String: String])->URL{
+       //combining both and forming image...
+        let path = data["path"] ?? ""
+        let ext = data["extension"] ?? ""
+        
+        return URL(string: "\(path).\(ext)")!
+    }
 }
