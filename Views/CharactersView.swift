@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct CharactersView: View {
     @EnvironmentObject var homeData: HomeViewModel
@@ -49,6 +50,7 @@ struct CharactersView: View {
 
                         TextField("Search Character", text: $homeData.searchQuery)
                             .autocapitalization(.none)
+                            .disableAutocorrection(true)
                     }
                     .padding(.vertical, 10)
                     .padding(.horizontal)
@@ -93,4 +95,17 @@ struct CharactersView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
+}
+
+struct CharacterRowView: View {
+    var character: Character
+    
+    var body: some View{
+        HStack{
+            
+//            WebImage(url: URL())
+        }
+    }
+    
+    
 }

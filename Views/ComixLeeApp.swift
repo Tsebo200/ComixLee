@@ -15,31 +15,35 @@ struct ComixLeeApp: App {
             
             
 //            SplashScreenView() //It is in the splash group
-//            Home()
+            Home()
             
             //Feedback
             //Remove all TabViews
             // Add the Home view here
             
-            TabView {
-                NavigationView {
-                    Home()}.tabItem{
-                        Image(systemName: "house")
-                        Text("Home")
-                    }
-
-                NavigationView {
-                    ContentView()}.tabItem{
-                        Image(systemName: "book")
-                        Text("Reading")
-                    }
-                NavigationView {
-                    SettingsModeSwitchView()}.tabItem {
-                        Image(systemName: "gearshape")
-                        Text("Settings")
-                    }
-                 
-            }
+            
+            
+//            TabView {
+//                NavigationView {
+//                    Home()}.tabItem{
+//                        Image(systemName: "house")
+//                        Text("Home")
+//                    }
+//
+//                NavigationView {
+//                    ContentView()}.tabItem{
+//                        Image(systemName: "book")
+//                        Text("Reading")
+//                    }
+//                NavigationView {
+//                    SettingsModeSwitchView()}.tabItem {
+//                        Image(systemName: "gearshape")
+//                        Text("Settings")
+//                    }
+//
+//            }
+            
+            
                 .preferredColorScheme(isDarkMode ? .dark : .light)
                 .accentColor(.primary)
                 
