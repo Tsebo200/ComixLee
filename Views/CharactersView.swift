@@ -53,7 +53,7 @@ struct CharactersView: View {
 //                        .padding(.top,20)
 //                }
             })
-            .navigationTitle("Marvel")
+            .navigationTitle("Marvel Comix")
         }
     }
 }

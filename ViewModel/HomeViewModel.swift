@@ -17,8 +17,8 @@ class HomeViewModel: ObservableObject {
     // used to cancel the search publisher when eveer we need....
     var searchCancellable: AnyCancellable? = nil
     
-    //fetch Data
-    @Published var fetchCharcters: [Character]? = nil
+    //fetched Data
+    @Published var fetchedCharacters: [Character]? = nil
     init(){
         //         since SwiftUI uses @publish so its a publisher....
         //         so we dont need to explicityly define publisher... (left of @05:08)
@@ -29,28 +29,29 @@ class HomeViewModel: ObservableObject {
             .debounce(for: 0.6, scheduler: RunLoop.main)
             .sink(receiveValue: {str in
                 
-//                if str == ""{
-//                    //rest data
-////                    self.fetchedCharacters = nil
-//
-//                }
-//                else{
-//                    //search Data
-//                    self.searchCharcter()
-//
-//                }
+                if str == ""{
+                    //rest data
+                    self.fetchedCharacters = nil
+
+                }
+                else{
+                    //search Data
+                    print(str)
+                    self.searchCharacter()
+
+                }
                 
             })
         
     }
-    func searchCharcter(){
+    func searchCharacter(){
         let ts = String(Date().timeIntervalSince1970)
         let hash = MD5(data: "\(ts)\(privateKey)\(publicKey)")
         let url = "https://gateway.marvel.com:443/v1/public/characters?ts=\(ts)&apikey=\(publicKey)&hash=\(hash)"
         
         let session = URLSession(configuration: .default)
         
-        session.dataTask(with: URL(string: url)!) {(data, _, err) in
+        session.dataTask(with: URL(string: url)!) { (data, _, err) in
             
             if let error = err{
                 print(error.localizedDescription)
@@ -68,9 +69,9 @@ class HomeViewModel: ObservableObject {
                 
                 DispatchQueue.main.async {
                     
-//                    if self.fetchedCharacters == nil{
-//                        self.fetchedCharacters = characters.data.results
-//                    }
+                    if self.fetchedCharacters == nil{
+                        self.fetchedCharacters = characters.data.results
+                    }
                 }
             }
             catch{
