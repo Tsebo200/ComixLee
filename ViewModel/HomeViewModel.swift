@@ -47,7 +47,11 @@ class HomeViewModel: ObservableObject {
     func searchCharacter(){
         let ts = String(Date().timeIntervalSince1970)
         let hash = MD5(data: "\(ts)\(privateKey)\(publicKey)")
-        let url = "https://gateway.marvel.com:443/v1/public/characters?ts=\(ts)&apikey=\(publicKey)&hash=\(hash)"
+        
+        let originalQuery = searchQuery.replacingOccurrences(of: "", with: "%20")
+        let url = "https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=\(originalQuery)&ts=\(ts)&apikey=\(publicKey)&hash=\(hash)"
+        
+
         
         let session = URLSession(configuration: .default)
         

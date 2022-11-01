@@ -19,7 +19,7 @@ struct Home: View {
                 }
             //Setting up the environment in order to access data from CharcatersView
                 .environmentObject(homeData)
-            Text("Planning")
+            Text("Comics")
                 .tabItem {
                     Image(systemName: "books.vertical.fill")
                     Text("comics")
