@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+//
 let MarvelChars: [Marvel] = [
     Marvel(name: "Captain america", desc: "americas ass", PFP: "gear"),
     Marvel(name: "Black Widow", desc: "badass", PFP: "gear")

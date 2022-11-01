@@ -25,6 +25,7 @@ struct Character: Identifiable,Codable {
     var  urls: [[String: String]]
 
 }
+
 //just to check
 
 //Consider To add the Rest
