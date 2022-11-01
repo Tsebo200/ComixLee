@@ -103,9 +103,11 @@ struct CharacterRowView: View {
     var body: some View{
         HStack{
             
-            WebImage(url: URL())
+//            WebImage(url: URL(string: charcater.))
         }
     }
     
-    
+//    func extractImage()->URL{
+//        
+//    }
 }
