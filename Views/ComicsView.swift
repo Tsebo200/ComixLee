@@ -33,11 +33,49 @@ struct ComicsView: View {
                             ComicRowView(character: comic)
                             
                         }
+                        
+                        // Infinty Scroll Using Geomtry Reader..
+                        if homeData.offset == homeData.fetchedComics.count{
+                            
+                            // showing progress and fetching new data....
+                            ProgressView()
+                                .padding(.vertical)
+                                .onAppear(perform: {
+                                    print("fetching new data...")
+                                })
+                        }
+                        else{
+                            GeometryReader{reader -> Color in
+                                
+                                let minY =  reader.frame(in: .global).minY
+                                
+                                let height = UIScreen.main.bounds.height / 1.3
+                                
+                                // When it goes over the height triggering update...
+                                
+                                if homeData.fetchedComics.isEmpty && minY < height{
+                                   
+                                    print("last")
+                                    
+                                    DispatchQueue.main.async {
+                                        // Setting offset to current fetched comic count....
+                                        //  so 0 will be now fetched from 20....
+                                        // and so on...
+                                        
+                                        homeData.offset = homeData.fetchedComics.count
+                                    }
+                                }
+                                
+                                return Color.clear
+                            }
+                        }
+                        
                     }
+                    .padding(.bottom)
                 }
             })
+            .navigationTitle("Marvel Comix")
         }
-            
         // Loading Data....
         .onAppear(perform: {
             if homeData.fetchedComics.isEmpty{

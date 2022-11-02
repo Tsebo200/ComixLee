@@ -82,7 +82,8 @@ struct CharactersView: View {
 //
                 }
             })
-            .navigationTitle("Marvel Comix")
+            //This is
+            .navigationTitle("Comix Characters")
         }
     }
 }
