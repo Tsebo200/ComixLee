@@ -28,13 +28,14 @@ struct SettingsModeSwitchView: View {
                     .tag(true)
             }.pickerStyle(SegmentedPickerStyle())
                 .padding()
-            //                            Spacer()
-            List(0..<5, id: \.self){ num in
-                NavigationLink(destination: Text("\(num)")){
-                    Text("\(num)")
-                }
-            }
-        }.navigationTitle("Mode Switch")
+            //
+            Spacer()
+//            List(0..<5, id: \.self){ num in
+//                NavigationLink(destination: Text("\(num)")){
+//                    Text("\(num)")
+//                }
+            }.navigationTitle("Mode Switch")
+//        }
     }
 }
 

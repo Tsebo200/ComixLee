@@ -14,15 +14,16 @@ struct ComixLeeApp: App {
         WindowGroup {
             
             
-//            SplashScreenView() //It is in the splash group
-            Home()
+            SplashScreenView() //It is in the splash group
+//            Home()
+//            LoopingPlayer()
             
             //Feedback
             //Remove all TabViews
             // Add the Home view here
             
             
-            
+
 //            TabView {
 //                NavigationView {
 //                    Home()}.tabItem{

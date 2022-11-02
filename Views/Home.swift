@@ -14,17 +14,35 @@ struct Home: View {
             //Characters View
             CharactersView()
                 .tabItem {
-                    Image(systemName: "person.3.fill")
-                    Text("Characters")
+                    Image(systemName: "house")
+                    Text("Home")
                 }
+            
+          
+            
             //Setting up the environment in order to access data from CharcatersView
                 .environmentObject(homeData)
+            
+            NavigationView {
+                ContentView()}.tabItem{
+                    Image(systemName: "book")
+                    Text("My Comix")
+                }
+            
+            
             ComicsView()
                 .tabItem {
                     Image(systemName: "books.vertical.fill")
-                    Text("comics")
+                    Text("Browse")
                 }
                 .environmentObject(homeData)
+          
+        
+            NavigationView {
+                SettingsModeSwitchView()}.tabItem {
+                    Image(systemName: "gearshape")
+                    Text("Settings")
+                }
         }
     }
 }
