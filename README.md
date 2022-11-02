@@ -3,13 +3,13 @@
 <!-- Repository Information & Links-->
 <br />
 
-![GitHub repo size](https://img.shields.io/github/repo-size/Tsebo200/Pacualtor)
-![GitHub watchers](https://img.shields.io/github/watchers/Tsebo200/Pacualtor)
-![GitHub language count](https://img.shields.io/github/languages/count/Tsebo200/Pacualtor)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Tsebo200/Pacualtor)
-![Github Language](https://img.shields.io/github/languages/top/Tsebo200/Pacualtor)
-![Github Downloads](https://img.shields.io/github/downloads/Tsebo200/Pacualtor/total)
-<!-- ![Github node Version](https://img.shields.io/node/v/Paculator) -->
+![GitHub repo size](https://img.shields.io/github/repo-size/Tsebo200/ComixLee)
+![GitHub watchers](https://img.shields.io/github/watchers/Tsebo200/ComixLee)
+![GitHub language count](https://img.shields.io/github/languages/count/Tsebo200/ComixLee)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Tsebo200/ComixLee)
+![Github Language](https://img.shields.io/github/languages/top/Tsebo200/ComixLee)
+![Github Downloads](https://img.shields.io/github/downloads/Tsebo200/ComixLee/total)
+<!-- ![Github node Version](https://img.shields.io/node/v/ComixLee) -->
 
 
 <!-- HEADER SECTION -->
@@ -20,11 +20,11 @@
 </br>
 <p align="center">
 
-  <a href="https://github.com/Tsebo200/Paculator">
+  <a href="https://github.com/Tsebo200/ComixLee">
     <img src="src/assets/Logo.svg" align="center" alt="../src/Assets/Logo\ 2.png" width="140" height="140">
   </a>
   
-  <h3 align="center">Paculator</h3>
+  <h3 align="center">ComixLee</h3>
 
   <p align="center">
     A react project to manage breadwinners earnings while unit testing all the functions<br>
@@ -33,9 +33,9 @@
    <br />
    <a href="https://drive.google.com/file/d/1gY-Q5ua-iswJ4MdF9xmGJ-9F9rR-bsMO/view?usp=sharing">View Demo</a>
     ·
-    <a href="https://github.com/Tsebo200/Paculator/issues">Report Bug</a>
+    <a href="https://github.com/Tsebo200/ComixLee/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Tsebo200/Paculator/issues">Request Feature</a>
+    <a href="https://github.com/Tsebo200/ComixLee/issues">Request Feature</a>
 </p>
 <!-- TABLE OF CONTENTS -->
 
@@ -94,12 +94,12 @@ Ensure that you have the latest version of [NPM](https://www.npmjs.com/) install
 Here are a couple of ways to clone this repo:
 
 1. GitHub Desktop </br>
-Enter `https://github.com/Tsebo200/Paculator.git` into the URL field and press the `Clone` button.
+Enter `https://github.com/Tsebo200/ComixLee.git` into the URL field and press the `Clone` button.
 
 2. Clone Repository </br>
 Run the following in the command-line to clone the project:
    ```sh
-   git clone https://github.com/Tsebo200/Paculator.git
+   git clone https://github.com/Tsebo200/ComixLee.git
    ```
     Open `Software` and select `File | Open...` from the menu. Select cloned directory and press `Open` button
 
@@ -117,16 +117,16 @@ Run the following in the command-line to install all the required dependencies:
 ### Feature 
 Once this button is clicked tax will be calculated and subtracted from your earnings on top of that your tax bracket will be displayed under your name in the income after tax container.<br>
 
-![image1](https://github.com/Tsebo200/Pacualtor/blob/main/src/assets/ButtonImg.png)
+![image1](https://github.com/Tsebo200/ComixLee/blob/main/src/assets/ButtonImg.png)
 
 
 ### Functionality 
 This functionality shows the percentage of the contributed amount in the household. The more you have contributed the higher the percent you own of the Net Income. <br>
-![image2](https://github.com/Tsebo200/Pacualtor/blob/main/src/assets/TotalNetIncome.png)
+![image2](https://github.com/Tsebo200/ComixLee/blob/main/src/assets/TotalNetIncome.png)
 
 
 Now since in this case Elon Musk owns 100% of the Net Income, he also owns the savings amount.
-![image3](https://github.com/Tsebo200/Pacualtor/blob/main/src/assets/AmountLeftOver.png)
+![image3](https://github.com/Tsebo200/ComixLee/blob/main/src/assets/AmountLeftOver.png)
 
 <br>
 
@@ -212,23 +212,23 @@ What aspects of this final build contribute to the `Above And Beyond` Component 
 
 ### Mockups
 
-![image12](https://github.com/Tsebo200/Pacualtor/blob/main/src/assets/MockOne.png)
+![image12](https://github.com/Tsebo200/ComixLee/blob/main/src/assets/MockOne.png)
 
 <br>
 
-![image13](https://github.com/Tsebo200/Pacualtor/blob/main/src/assets/MockTwo.png)
+![image13](https://github.com/Tsebo200/ComixLee/blob/main/src/assets/MockTwo.png)
 
 <br>
 
-![image13](https://github.com/Tsebo200/Pacualtor/blob/main/src/assets/MockThree.png)
+![image13](https://github.com/Tsebo200/ComixLee/blob/main/src/assets/MockThree.png)
 
 <br>
 
-![image14](https://github.com/Tsebo200/Pacualtor/blob/main/src/assets/MockFour.png)
+![image14](https://github.com/Tsebo200/ComixLee/blob/main/src/assets/MockFour.png)
 
 <br>
 
-![image15](https://github.com/Tsebo200/Pacualtor/blob/main/src/assets/MockFive.png)
+![image15](https://github.com/Tsebo200/ComixLee/blob/main/src/assets/MockFive.png)
 
 <br>
 
@@ -240,7 +240,7 @@ To see a run through of the application, click below:
 [View Demonstration](https://drive.google.com/file/d/1gY-Q5ua-iswJ4MdF9xmGJ-9F9rR-bsMO/view?usp=sharing)
 
 
-See the [open issues](https://github.com/Tsebo200/Paculator/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/Tsebo200/ComixLee/issues) for a list of proposed features (and known issues).
 
 <!-- AUTHORS -->
 ## Authors
@@ -256,7 +256,7 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 ## Contact
 
 * **Tsebo Ramonyalioa** - [email@address](mailto:200200@virtualwidnow.co.za) - [@instagram_handle](https://www.instagram.com/inspiration200200/) 
-* **Project Link** - https://github.com/Tsebo200/Pacualtor
+* **Project Link** - https://github.com/Tsebo200/ComixLee
 
 <!-- ACKNOWLEDGEMENTS -->
 
