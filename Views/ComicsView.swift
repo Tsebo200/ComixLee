@@ -53,7 +53,7 @@ struct ComicsView: View {
                                 
                                 // When it goes over the height triggering update...
                                 
-                                if homeData.fetchedComics.isEmpty && minY < height{
+                                if !homeData.fetchedComics.isEmpty && minY < height{
                                    
                                     print("last")
                                     
@@ -68,6 +68,7 @@ struct ComicsView: View {
                                 
                                 return Color.clear
                             }
+                            .frame(width: 20, height: 20)
                         }
                         
                     }
