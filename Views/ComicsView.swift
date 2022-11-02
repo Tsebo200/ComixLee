@@ -42,6 +42,7 @@ struct ComicsView: View {
                                 .padding(.vertical)
                                 .onAppear(perform: {
                                     print("fetching new data...")
+                                    homeData.fetchComics()
                                 })
                         }
                         else{
