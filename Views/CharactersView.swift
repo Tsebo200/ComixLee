@@ -34,10 +34,6 @@ struct CharactersView: View {
             
             
             
-            
-            
-            
-            
 //            HStck wrap in a destination in detail screen
             ScrollView(.vertical, showsIndicators: false, content:{
                 VStack(spacing: 15){

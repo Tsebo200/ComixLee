@@ -113,8 +113,6 @@ class HomeViewModel: ObservableObject {
         let url =
             "https://gateway.marvel.com:443/v1/public/comics?limit=20&offset=\(offset)&ts=\(ts)&apikey=\(publicKey)&hash=\(hash)"
         
-
-        
         let session = URLSession(configuration: .default)
         
         session.dataTask(with: URL(string: url)!) { (data, _, err) in
