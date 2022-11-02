@@ -55,6 +55,7 @@ class HomeViewModel: ObservableObject {
         let hash = MD5(data: "\(ts)\(privateKey)\(publicKey)")
         
         let originalQuery = searchQuery.replacingOccurrences(of: "", with: "%20")
+//        let originalQuery = "thor"
         let url = "https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=\(originalQuery)&ts=\(ts)&apikey=\(publicKey)&hash=\(hash)"
         
 
@@ -64,6 +65,7 @@ class HomeViewModel: ObservableObject {
         session.dataTask(with: URL(string: url)!) { (data, _, err) in
             
             if let error = err{
+                print("error")
                 print(error.localizedDescription)
                 return
             }
@@ -73,21 +75,25 @@ class HomeViewModel: ObservableObject {
                 return
             }
             do{
-                
+               //Check this part out
                 //Now This is were we decode The API Data....
                 let characters = try JSONDecoder().decode(APIResult.self, from: APIData)
-                
+                print(APIData)
+                print(characters.data)
+                self.fetchedCharacters = characters.data.results
                 DispatchQueue.main.async {
                     
                     if self.fetchedCharacters == nil{
+                        print(characters)
                         self.fetchedCharacters = characters.data.results
 //                        Added with Armand to test check results
-//                        print(self.fetchedCharacters ?? "hello world")
+                        print(self.fetchedCharacters ?? "hello world")
                     }
                 }
             }
             catch{
-                print(error.localizedDescription)
+                print("Catch")
+                print(error)
             }
             
         }

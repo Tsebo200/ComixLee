@@ -15,8 +15,8 @@
 <!-- HEADER SECTION -->
 <h5 align="center" style="padding:0;margin:0;">Tsebo Ramonyalioa</h5>
 <h5 align="center" style="padding:0;margin:0;">200200</h5>
-<h6 align="center">DV202 - Term 2 | 2022</h6>
-<h6 align="center">Unit Testing</h6>
+<h6 align="center">DV204 - Term 4 | 2022</h6>
+<h6 align="center">iOS Introduction</h6>
 </br>
 <p align="center">
 
@@ -27,7 +27,7 @@
   <h3 align="center">ComixLee</h3>
 
   <p align="center">
-    A react project to manage breadwinners earnings while unit testing all the functions<br>
+    A mobile iOS library application built with swiftUI<br>
     
    <br />
    <br />
