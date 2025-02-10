@@ -11,9 +11,12 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             Color(.lightWhite).ignoresSafeArea(edges: .all)
+           
             
             ZStack{
-                Color(.darkWhite)
+                Color(.darkWhite).cornerRadius(45)
+                    .frame(width: 400, height: 750)
+                    .shadow(color: .black, radius: 5, x: 0, y: 4).opacity(0.2)
             }
         }
     }
